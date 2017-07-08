@@ -1,12 +1,12 @@
 #coding:utf-8
 
 from flask import Flask
-from flask.ext.sqlalchemy import SQLAlchemy
-from flask.ext.pagedown import PageDown
-from flask.ext.restful import Api
+from flask_sqlalchemy import SQLAlchemy
+from flask_pagedown import PageDown
+from flask_restful import Api
 import os
-from flask.ext.mail import Mail
-from flask.ext.login import LoginManager
+from flask_mail import Mail
+from flask_login import LoginManager
 from config import basedir
 from momentjs import momentjs
 

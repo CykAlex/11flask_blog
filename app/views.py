@@ -2,8 +2,8 @@
 #coding:utf-8
 
 from flask import render_template, flash, redirect, session, url_for, request, g, jsonify, abort
-from flask.ext.login import login_user, logout_user, current_user, login_required
-from flask.ext.restful import Resource, reqparse
+from flask_login import login_user, logout_user, current_user, login_required
+from flask_restful import Resource, reqparse
 from app import app, db, lm, api
 from .forms import LoginForm, RegisterForm, EditForm, PostForm, SearchForm, EssayForm, EmailForm
 from .models import User, Post, Essay
